@@ -1,0 +1,9 @@
+[Unit]
+Description = scheduled saikidou 4times per day 0 and 6 and 12 and 18
+
+[Timer]
+OnCalendar = *-*-* 0,6,12,18:00:00
+AccuracySec = 1m
+
+[Install]
+WantedBy = timers.target

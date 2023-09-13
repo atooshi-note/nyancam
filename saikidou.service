@@ -1,0 +1,9 @@
+[Unit]
+Description = scheduled saikidou 4times per day 0 and 6 and 12 and 18
+
+[Service]
+Type = simple
+ExecStart=/usr/bin/systemctl --force reboot
+
+[Install]
+WantedBy = multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description = nyamcam1 for odekake
+
+[Service]
+ExecStart=/usr/bin/python3 /home/USERNAME/Desktop/nyancam.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
